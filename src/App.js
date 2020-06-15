@@ -9,6 +9,13 @@ function App() {
     updateAppointments([...appointments, appointment]);
   };
 
+  const deleteAppointment = (id) => {
+    const newAppointments = appointments.filter(
+      (appointment) => appointment.id !== id
+    );
+    updateAppointments(newAppointments);
+  };
+
   return (
     <Fragment>
       <h2>Simple Vet Clinic App</h2>
@@ -20,7 +27,11 @@ function App() {
           <div className="one-half column">
             <h2>Admin your appointment</h2>
             {appointments.map((appointment) => (
-              <Appointment key={appointment.id} appointment={appointment} />
+              <Appointment
+                key={appointment.id}
+                appointment={appointment}
+                deleteAppointment={deleteAppointment}
+              />
             ))}
           </div>
         </div>

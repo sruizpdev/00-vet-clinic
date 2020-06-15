@@ -68,3 +68,9 @@ input[type='time'] {
   box-shadow: none;
   box-sizing: border-box;
 }
+.button.delete,
+.button.delete:hover {
+  background-color: #c10059;
+  color: white;
+  margin-top: 2rem;
+}
