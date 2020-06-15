@@ -36,6 +36,13 @@ const Form = ({ newAppointment }) => {
     updateError(false);
     appointment.id = uuidv4();
     newAppointment(appointment);
+    updateAppointment({
+      pet: '',
+      owner: '',
+      date: '',
+      time: '',
+      description: '',
+    });
   };
   return (
     <Fragment>
