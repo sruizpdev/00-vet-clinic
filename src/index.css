@@ -32,3 +32,39 @@ h2 {
   text-align: center;
   font-family: 'Staatliches', cursive;
 }
+.appointment {
+  padding: 2rem;
+  background: white;
+  border-bottom: 1px solid #e1e1e1;
+  color: black;
+}
+
+.appointment p {
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+.appointment p span {
+  font-weight: normal;
+}
+.appointment:first-of-type {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.appointment:last-of-type {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+label {
+  color: white;
+}
+
+input[type='date'],
+input[type='time'] {
+  height: 38px;
+  padding: 6px 10px;
+  background-color: #fff;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+}

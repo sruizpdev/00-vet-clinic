@@ -46,7 +46,7 @@ const Form = ({ newAppointment }) => {
   };
   return (
     <Fragment>
-      <h1>New appoinment</h1>
+      <h2>New appoinment</h2>
       {error ? <p className="alert-error">An error has occurred</p> : null}
       <form onSubmit={submitAppointment}>
         <label>Pet name</label>
