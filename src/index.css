@@ -17,26 +17,18 @@ body {
 h1,
 h2 {
   color: white;
-  padding: 3rem 0;
+  padding: 1rem 0;
   text-align: center;
   text-transform: uppercase;
   font-family: 'Staatliches', cursive;
   letter-spacing: 1px;
 }
-.alert-error {
-  background-color: white;
-  color: red;
-  padding: 1rem;
-  font-size: 2rem;
-  text-transform: uppercase;
-  text-align: center;
-  font-family: 'Staatliches', cursive;
-}
+
 .appointment {
-  padding: 2rem;
+  padding: 1rem;
   background: white;
-  border-bottom: 1px solid #e1e1e1;
-  color: black;
+  border-bottom: 2px solid #606060;
+  color: rgb(110, 110, 110);
 }
 
 .appointment p {
@@ -46,31 +38,44 @@ h2 {
 .appointment p span {
   font-weight: normal;
 }
-.appointment:first-of-type {
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-}
-.appointment:last-of-type {
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-}
+
 label {
   color: white;
+  font-weight: 100;
 }
-
+input[type='text'],
 input[type='date'],
 input[type='time'] {
   height: 38px;
   padding: 6px 10px;
   background-color: #fff;
   border: 1px solid #d1d1d1;
-  border-radius: 4px;
+  border-radius: 0;
   box-shadow: none;
   box-sizing: border-box;
 }
+textarea {
+  border-radius: 0;
+}
+.button-primary {
+  border-radius: 0;
+  font-weight: 100;
+}
 .button.delete,
 .button.delete:hover {
-  background-color: #c10059;
+  background-color: #005b69;
   color: white;
   margin-top: 2rem;
+  font-weight: 100;
+  border-radius: 0;
+  font-weight: 100;
+}
+.alert-error {
+  background-color: white;
+  color: red;
+  padding: 1rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Staatliches';
 }
