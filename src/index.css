@@ -19,9 +19,16 @@ h2 {
   color: white;
   padding: 3rem 0;
   text-align: center;
-
   text-transform: uppercase;
-
   font-family: 'Staatliches', cursive;
   letter-spacing: 1px;
+}
+.alert-error {
+  background-color: white;
+  color: red;
+  padding: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Staatliches', cursive;
 }
