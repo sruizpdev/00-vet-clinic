@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
-const Form = () => {
+const Form = ({ newAppointment }) => {
   const [appointment, updateAppointment] = useState({
     pet: '',
     owner: '',
@@ -35,6 +35,7 @@ const Form = () => {
     }
     updateError(false);
     appointment.id = uuidv4();
+    newAppointment(appointment);
   };
   return (
     <Fragment>
